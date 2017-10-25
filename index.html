@@ -18,7 +18,23 @@
 				<img src="placeholder.jpg">
 			</div>
 			<script>
-				$('#demo').YTPlayer({videoId: 'MwHg4y0kjDI'});
+				$('#demo').YTPlayer({
+					videoId:'MwHg4y0kjDI',
+					repeat: true,
+					width: $(window).width(840),
+					start: 0,
+					pauseOnScroll: false,
+					fitToBackground: true,
+					playerVars: { iv_load_policy: 3,
+								  modestbranding: 1,
+								  autoplay: 1,
+								  controls: 0,
+								  showinfo: 0,
+								  wmode: 'opaque',
+								  branding: 0,
+								  autohide: 0
+								},
+					});
 			</script>
 
 		</div>
