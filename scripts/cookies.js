@@ -25,8 +25,7 @@
     },  
 	
 	InjectCookieScript = function () {
-		cookieScriptDropfromFlag=0;
-		/* if(cookieScriptSrc!='http://'+cookieScriptSource+'/s/'+cookieId+'.js'&&cookieScriptSrc!='http://chs02.'+cookieScriptSource+'/s/'+cookieId+'.js'&&cookieScriptSrc != 'http://chs03.' + cookieScriptSource + '/s/' + cookieId + '.js'&&cookieScriptSrc!='https://'+cookieScriptSource+'/s/'+cookieId+'.js'&&''!=cookieScriptSrc)return!1;cookieScriptDroptoFlag=0;		if(window.location.protocol == 'https:')	cookieScriptStatsDomain=''; */
+		cookieScriptDropfromFlag=0;if(cookieScriptSrc!='http://'+cookieScriptSource+'/s/'+cookieId+'.js'&&cookieScriptSrc!='http://chs02.'+cookieScriptSource+'/s/'+cookieId+'.js'&&cookieScriptSrc != 'http://chs03.' + cookieScriptSource + '/s/' + cookieId + '.js'&&cookieScriptSrc!='https://'+cookieScriptSource+'/s/'+cookieId+'.js'&&''!=cookieScriptSrc)return!1;cookieScriptDroptoFlag=0;		if(window.location.protocol == 'https:')	cookieScriptStatsDomain='';
 		else										cookieScriptStatsDomain='chs03.';
 		cookieScriptCreateCookie = function (n, t, i) {
 			if(window.location.protocol == 'https:')
